@@ -5,7 +5,7 @@ function BottomBar({askClaude}) {
         <Input placeholder="Ask Claude" onKeyPress={(e) => {
             if (e.key === 'Enter') {
                 askClaude(e.target.value);
-                e.target.value = '';
+                // e.target.value = '';
             }
         }
         } />
