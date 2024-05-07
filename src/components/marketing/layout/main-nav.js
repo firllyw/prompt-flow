@@ -12,7 +12,6 @@ import Typography from '@mui/material/Typography';
 import { CaretDown as CaretDownIcon } from '@phosphor-icons/react/dist/ssr/CaretDown';
 import { List as ListIcon } from '@phosphor-icons/react/dist/ssr/List';
 
-import { paths } from '@/paths';
 import { isNavItemActive } from '@/lib/is-nav-item-active';
 import { Dropdown } from '@/components/core/dropdown/dropdown';
 import { DropdownPopover } from '@/components/core/dropdown/dropdown-popover';
@@ -42,15 +41,7 @@ export function MainNav() {
       >
         <Container maxWidth="lg" sx={{ display: 'flex', minHeight: 'var(--MainNav-height)', py: '16px' }}>
           <Stack direction="row" spacing={2} sx={{ alignItems: 'center', flex: '1 1 auto' }}>
-            <Box component={RouterLink} href={paths.home} sx={{ display: 'inline-flex' }}>
-              <Logo color="light" height={32} width={122} />
-            </Box>
-            <Box component="nav" sx={{ display: { xs: 'none', md: 'block' } }}>
-              <Stack component="ul" direction="row" spacing={1} sx={{ listStyle: 'none', m: 0, p: 0 }}>
-                <NavItem href={paths.components.index} pathname={pathname} title="Components" />
-                <NavItem href={paths.docs} pathname={pathname} title="Documentation" />
-              </Stack>
-            </Box>
+            
           </Stack>
           <Stack
             direction="row"
@@ -66,7 +57,7 @@ export function MainNav() {
             </Box>
             <Button
               component="a"
-              href={paths.purchase}
+              // href={paths.purchase}
               sx={{ display: { xs: 'none', md: 'flex' } }}
               target="_blank"
               variant="contained"

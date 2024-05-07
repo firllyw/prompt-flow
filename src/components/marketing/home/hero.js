@@ -77,12 +77,12 @@ export function Hero() {
             </Typography>
           </Stack>
           <Stack direction="row" spacing={2} sx={{ justifyContent: 'center' }}>
-            <Button component={RouterLink} href={paths.dashboard.overview} variant="contained">
+            <Button component={RouterLink} href={''} variant="contained">
               Dashboard
             </Button>
             <Button
               component={RouterLink}
-              href={paths.components.index}
+              href={'/'}
               sx={{
                 color: 'var(--mui-palette-common-white)',
                 '&:hover': { bgcolor: 'var(--mui-palette-action-hover)' },
