@@ -146,7 +146,7 @@ const nodeTypes = {
 }
 const url = 'http://localhost:3000/anthropic/';
 const anthropic = new Anthropic({
-    apiKey: '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',
+    apiKey: process.env.ANTHROPIC_API_KEY,
     baseURL: url,
 });
 
