@@ -5,7 +5,7 @@ export function applyDefaultSettings(settings) {
     colorScheme: config.site.colorScheme,
     primaryColor: config.site.primaryColor,
     direction: 'ltr',
-    navColor: 'evident',
+    navColor: 'blend_in',
     layout: 'vertical',
     ...settings,
   };

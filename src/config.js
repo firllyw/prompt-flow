@@ -8,7 +8,7 @@ export const config = {
     description: '',
     colorScheme: 'light',
     themeColor: '#090a0b',
-    primaryColor: 'neonBlue',
+    primaryColor: 'chateauGreen',
     url: getSiteURL(),
     version: process.env.NEXT_PUBLIC_SITE_VERSION || '0.0.0',
   },

@@ -11,7 +11,6 @@ import { SettingsProvider } from '@/contexts/settings';
 import { Analytics } from '@/components/core/analytics';
 import { I18nProvider } from '@/components/core/i18n-provider';
 import { LocalizationProvider } from '@/components/core/localization-provider';
-import { SettingsButton } from '@/components/core/settings/settings-button';
 import { ThemeProvider } from '@/components/core/theme-provider/theme-provider';
 import { Toaster } from '@/components/core/toaster';
 
@@ -34,7 +33,6 @@ export default async function Layout({ children }) {
                 <I18nProvider language="en">
                   <ThemeProvider>
                     {children}
-                    <SettingsButton />
                     <Toaster position="bottom-right" />
                   </ThemeProvider>
                 </I18nProvider>

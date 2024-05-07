@@ -8,10 +8,10 @@ export const layoutConfig = {
       items: [
         {
           key: 'my-diagrams',
-          title: 'My Diagrams',
-          href: paths.dashboard.myDiagrams.index,
-          icon: 'gear',
-          matcher: { type: 'startsWith', href: '/dashboard/my-diagrams' },
+          title: 'Diagrams',
+          href: paths.dashboard.myDiagrams.create,
+          icon: 'file',
+          matcher: { type: 'startsWith', href: '/dashboard/my-diagrams/create' },
         },
       ],
     },
