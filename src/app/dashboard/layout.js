@@ -5,8 +5,8 @@ import { DynamicLayout } from '@/components/dashboard/layout/dynamic-layout';
 
 export default function Layout({ children }) {
   return (
-    <AuthGuard>
+    // <AuthGuard>
       <DynamicLayout>{children}</DynamicLayout>
-    </AuthGuard>
+    // </AuthGuard>
   );
 }
