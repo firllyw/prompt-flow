@@ -147,7 +147,7 @@ const nodeTypes = {
 const url = 'http://localhost:3000/anthropic/';
 const anthropic = new Anthropic({
     apiKey: process.env.NEXT_PUBLIC_ANTHROPIC_API_KEY,
-    baseURL: url,
+    // baseURL: url,
 });
 
 function MyDiagrams() {
@@ -194,6 +194,8 @@ function MyDiagrams() {
         // remove any char before the first [ and after the last ]
         nodesResponse = nodesResponse.slice(nodesResponse.indexOf('['), nodesResponse.lastIndexOf(']') + 1);
         edgesResponse = edgesResponse.slice(edgesResponse.indexOf('['), edgesResponse.lastIndexOf(']') + 1);
+        console.log(nodesResponse)
+        console.log(edgesResponse)
         setNodes(JSON.parse(nodesResponse));
         setEdges(JSON.parse(edgesResponse));
         setLoading(false);
