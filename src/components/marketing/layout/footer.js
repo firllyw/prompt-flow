@@ -8,36 +8,9 @@ import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Unstable_Grid2';
 
-import { paths } from '@/paths';
 import { DynamicLogo } from '@/components/core/logo';
 
 const groups = [
-  {
-    key: 'menu',
-    title: 'Menu',
-    items: [
-      { key: 'components', title: 'Components', href: paths.components.index },
-      { key: 'dashboard', title: 'Dashboard', href: paths.dashboard.overview },
-      { key: 'documentation', title: 'Documentation', external: true, href: paths.docs },
-    ],
-  },
-  {
-    key: 'legal',
-    title: 'Legal',
-    items: [
-      { key: 'terms-and-conditions', title: 'Terms & Conditions' },
-      { key: 'privacy-policy', title: 'License' },
-      { key: 'contact', title: 'Contact' },
-    ],
-  },
-  {
-    key: 'social',
-    title: 'Social',
-    items: [
-      { key: 'instagram', title: 'Instagram' },
-      { key: 'linkedin', title: 'LinkedIn' },
-    ],
-  },
 ];
 
 export function Footer() {

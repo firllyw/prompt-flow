@@ -146,7 +146,7 @@ const nodeTypes = {
 }
 const url = 'http://localhost:3000/anthropic/';
 const anthropic = new Anthropic({
-    apiKey: process.env.ANTHROPIC_API_KEY,
+    apiKey: process.env.NEXT_PUBLIC_ANTHROPIC_API_KEY,
     baseURL: url,
 });
 
@@ -159,7 +159,7 @@ function MyDiagrams() {
 
 
     const askClaude = async (question) => {
-        console.log('ask claude', url)
+        console.log('ask claude', url, process.env.NEXT_PUBLIC_ANTHROPIC_API_KEY)
         setLoading(true);
         const msg = await anthropic.messages.create({
             model: "claude-3-opus-20240229",
